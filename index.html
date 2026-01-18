@@ -1,228 +1,253 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>TRENDORA</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>TRENDORA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style> 
-  .product img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
-  border-radius: 12px;
-  margin-bottom: 12px;
-  background: #111;
-  }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0e1b17;
+      color: #ffffff;
+    }
 
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-header{
-  background:linear-gradient(135deg,#000,#0f3d2e);
-  text-align:center;
-  padding:45px 20px;
-}
-header h1{
-  margin:0;
-  font-size:38px;
-  letter-spacing:4px;
-}
-header img{
-  width:110px;
-  margin:15px auto;
-  display:block;
-}
-.company-desc{
-  max-width:720px;
-  margin:auto;
-  font-size:15px;
-  line-height:1.7;
-  color:#d5d5d5;
-}
+    header h1 {
+      font-size: 42px;
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+    }
 
-section{
-  max-width:1200px;
-  margin:auto;
-  padding:40px 20px;
-}
-h2{
-  text-align:center;
-  color:#2ecc71;
-  margin-bottom:30px;
-}
+    header img {
+      width: 140px;
+      margin-bottom: 20px;
+    }
 
-.products{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
-}
+    .company-desc {
+      max-width: 700px;
+      margin: auto;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #cfcfcf;
+    }
 
-.product{
-  background:#111;
-  border-radius:12px;
-  padding:15px;
-  position:relative;
-  box-shadow:0 6px 18px rgba(0,0,0,0.6);
-}
-.badge{
-  position:absolute;
-  top:12px;
-  left:12px;
-  background:#2ecc71;
-  color:#000;
-  padding:6px 10px;
-  font-size:12px;
-  font-weight:bold;
-  border-radius:5px;
-}
-.product img{
-  width:100%;
-  height:210px;
-  object-fit:cover;
-  border-radius:10px;
-}
-.product h3{
-  margin:12px 0 5px;
-}
-.product p{
-  font-size:14px;
-  color:#ccc;
-}
-.price{
-  color:#2ecc71;
-  font-weight:bold;
-  font-size:18px;
-  margin:8px 0;
-}
+    section {
+      padding: 40px 20px;
+    }
 
-.btn{
-  display:block;
-  margin-top:8px;
-  padding:12px;
-  text-align:center;
-  background:#2ecc71;
-  color:#000;
-  text-decoration:none;
-  border-radius:6px;
-  font-weight:bold;
-}
-.insta{
-  background:#c13584;
-  color:#fff;
-}
+    section h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 30px;
+      color: #2ecc9f;
+    }
 
-footer{
-  background:#000;
-  text-align:center;
-  color:#aaa;
-  padding:15px;
-  font-size:13px;
-}
-</style>
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product {
+      background: #111;
+      border-radius: 14px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .product img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .badge {
+      background: #e74c3c;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+
+    .product p {
+      font-size: 14px;
+      color: #cccccc;
+    }
+
+    .price {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #2ecc9f;
+    }
+
+    .order-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 18px;
+      background: #2ecc9f;
+      color: #000;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 15px;
+      background: #000;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
   <h1>TRENDORA</h1>
-  <img src="logo.png" alt="Trendora logo" class="logo">
+  <img src="logo.png" alt="TRENDORA Logo">
   <p class="company-desc">
-    TRENDORA is a modern streetwear brand focused on premium baggy fashion.
-    We design bold, comfortable clothing for everyday wear with a strong
-    emphasis on quality, fit, and trend-forward style.
+    TRENDORA is a modern streetwear brand delivering premium baggy fashion
+    for the bold generation. We focus on comfort, quality, and confidence —
+    redefining everyday style with a clean and powerful look.
   </p>
 </header>
 
+<!-- SHIRTS -->
 <section>
-<h2>Baggy Shirts</h2>
-<div class="products">
+  <h2>Baggy Shirts</h2>
+  <div class="products">
 
-<div class="product"><div class="badge">25% OFF</div>
-<img src="shirt1.jpg" alt="Black Baggy Shirt">
- <h3>Black Baggy Shirt</h3>
-<p>Relaxed-fit premium fabric shirt for everyday streetwear comfort.</p>
-<div class="price">₹899</div>
-<a class="btn" href="https://wa.me/919110498678">Order on WhatsApp</a>
-<a class="btn insta" href="https://instagram.com">Order on Instagram</a>
-</div>
+    <div class="product">
+      <span class="badge">20% OFF</span>
+      <img src="shirt1.jpg">
+      <h3>Black Baggy Shirt</h3>
+      <p>Premium oversized shirt with soft breathable fabric.</p>
+      <div class="price">₹999</div>
+      <a class="order-btn" href="https://wa.me/919110498678">Order Now</a>
+    </div>
 
-<div class="product"><div class="badge">30% OFF</div>
-<img src="./shirt2.jpg" alt="Emerald Baggy Shirt">
- <h3>Emerald Baggy Shirt</h3>
-<p>Bold emerald tone with oversized comfort and modern fit.</p>
-<div class="price">₹849</div>
-<a class="btn" href="https://wa.me/919110498678">Order on WhatsApp</a>
-<a class="btn insta" href="https://instagram.com">Order on Instagram</a>
-</div>
+    <div class="product">
+      <span class="badge">New</span>
+      <img src="shirt2.jpg">
+      <h3>Emerald Street Shirt</h3>
+      <p>Trendy street-style fit with modern urban design.</p>
+      <div class="price">₹1099</div>
+      <a class="order-btn" href="https://wa.me/919110498678">Order Now</a>
+    </div>
 
-<div class="product"><div class="badge">20% OFF</div>
-<img src="./shirt3.jpg" alt="Grey Baggy Shirt">
-<h3>Grey baggy shirt</h3>
-<p>Minimal street-style shirt with breathable premium cotton.</p>
-<div class="price">₹799</div>
-<a class="btn" href="https://wa.me/919110498678">Order on WhatsApp</a>
-<a class="btn insta" href="https://instagram.com">Order on Instagram</a>
-</div>
+    <div class="product">
+      <img src="shirt3.jpg">
+      <h3>Grey Baggy Shirt</h3>
+      <p>Relaxed fit shirt for everyday comfort and style.</p>
+      <div class="price">₹999</div>
+      <a class="order-btn" href="https://wa.me/919110498678">Order Now</a>
+    </div>
 
-<div class="product"><div class="badge">35% OFF</div>
-<img src="./shirt4.jpg" alt="White Baggy Shirt">
-<h3>White Baggy Shirt</h3>
-<p>Clean oversized white shirt with smooth texture and fit.</p>
-<div class="price">₹749</div>
-<a class="btn" href="https://wa.me/919110498678">Order on WhatsApp</a>
-<a class="btn insta" href="https://instagram.com">Order on Instagram</a>
-</div>
+    <div class="product">
+      <img src="shirt4.jpg">
+      <h3>White Oversized Shirt</h3>
+      <p>Minimal clean look with premium stitching.</p>
+      <div class="price">₹1199</div>
+      <a class="order-btn" href="https://wa.me/919110498678">Order Now</a>
+    </div>
 
-<div class="product"><div class="badge">28% OFF</div>
-<img src="./shirt5.jpg" alt="Olive Baggy Shirt">
-<h3>Olive Baggy Shirt</h3>
-<p>Urban-inspired baggy shirt built for bold street looks.</p>
-<div class="price">₹829</div>
-<a class="btn" href="https://wa.me/919110498678">Order on WhatsApp</a>
-<a class="btn insta" href="https://instagram.com">Order on Instagram</a>
-</div>
+    <div class="product">
+      <img src="shirt5.jpg">
+      <h3>Olive Baggy Shirt</h3>
+      <p>Perfect blend of comfort and street fashion.</p>
+      <div class="price">₹1099</div>
+      <a class="order-btn" href="https://wa.me/919110498678">Order Now</a>
+    </div>
 
-</div>
+  </div>
 </section>
 
+<!-- PANTS -->
 <section>
-<h2>Baggy Pants</h2>
-<div class="products">
+  <h2>Baggy Pants</h2>
+  <div class="products">
 
-<div class="product"><div class="badge">30% OFF</div>
-<img src="./pants1.jpg" alt="Black Baggy Pant">
-<h3>Black Baggy Pant 1</h3>
-<p>Loose-fit pants designed for modern streetwear comfort.</p>
-<div class="price">₹999</div>
-<a class="btn" href="https://wa.me/919110498678">Order on WhatsApp</a>
-<a class="btn insta" href="https://instagram.com">Order on Instagram</a>
-</div>
+    <div class="product">
+      <img src="pants1.jpg">
+      <h3>Black Baggy Pants</h3>
+      <p>Loose-fit pants designed for maximum comfort.</p>
+      <div class="price">₹1299</div>
+      <a class="order-btn" href="https://wa.me/919110498678">Order Now</a>
+    </div>
 
-<div class="product"><div class="badge">25% OFF</div>
-<img src="./pants2.jpg" alt="Grey Baggy Pant">
-<h3>Grey Baggy Pant 2</h3>
-<p>Premium relaxed-fit pants for daily wear.</p>
-<div class="price">₹949</div>
-<a class="btn" href="https://wa.me/919110498678">Order on WhatsApp</a>
-<a class="btn insta" href="https://instagram.com">Order on Instagram</a>
-</div>
+    <div class="product">
+      <img src="pants2.jpg">
+      <h3>Grey Street Pants</h3>
+      <p>Urban style pants with premium fabric quality.</p>
+      <div class="price">₹1399</div>
+      <a class="order-btn" href="https://wa.me/919110498678">Order Now</a>
+    </div>
 
-<div class="product"><div class="badge">35% OFF</div>
-<img src="./pants3.jpg" alt="Cargo Baggy Pant">
-<h3>Cargo Baggy Pant 3</h3>
-<p>Street-ready cargo pants with strong fabric and fit.</p>
-<div class="price">₹1099</div>
-<a class="btn" href="https://wa.me/919110498678">Order on WhatsApp</a>
-<a class="btn insta" href="https://instagram.com">Order on Instagram</a>
-</div>
+    <div class="product">
+      <img src="pants3.jpg">
+      <h3>Cargo Baggy Pants</h3>
+      <p>Stylish cargo design with extra utility pockets.</p>
+      <div class="price">₹1499</div>
+      <a class="order-btn" href="https://wa.me/919110498678">Order Now</a>
+    </div>
 
-</div>
+  </div>
+</section>
+
+<!-- POSTERS (NEW SECTION) -->
+<section>
+  <h2>Posters</h2>
+  <div class="products">
+
+    <div class="product">
+      <img src="poster1.jpg">
+      <h3>Street Art Poster</h3>
+      <p>High-quality poster with bold street aesthetics.</p>
+      <div class="price">₹399</div>
+      <a class="order-btn" href="https://wa.me/919110498678">Order Now</a>
+    </div>
+
+    <div class="product">
+      <img src="poster2.jpg">
+      <h3>Minimal Quote Poster</h3>
+      <p>Clean and modern typography for your space.</p>
+      <div class="price">₹349</div>
+      <a class="order-btn" href="https://wa.me/919110498678">Order Now</a>
+    </div>
+
+    <div class="product">
+      <img src="poster3.jpg">
+      <h3>Urban Fashion Poster</h3>
+      <p>Perfect wall decor for fashion lovers.</p>
+      <div class="price">₹449</div>
+      <a class="order-btn" href="https://wa.me/919110498678">Order Now</a>
+    </div>
+
+  </div>
 </section>
 
 <footer>
-© 2026 TRENDORA | Credit goes to <strong>Pavan</strong> & <strong>Team Trendora chatgpt</strong>
+  Contact: +91 9110498678 <br><br>
+  © Credit goes to Pavan and Team Trendora
 </footer>
 
 </body>
 </html>
-  
