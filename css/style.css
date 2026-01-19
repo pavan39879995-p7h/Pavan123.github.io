@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #0b0f0e;
+  color: #e5e5e5;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header img {
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  color: #2ecc71;
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+header p {
+  max-width: 600px;
+  margin: auto;
+  opacity: 0.9;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #e5e5e5;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #111;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 12px 0 5px;
+}
+
+.price {
+  color: #2ecc71;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 10px;
+  background: #2ecc71;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+  color: #aaa;
+}
