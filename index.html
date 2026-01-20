@@ -1,105 +1,71 @@
-<header class="site-header">
-  <img src="images/logo.png" alt="Trendora Logo" class="logo">
-  <h1 class="brand-name">TRENDORA</h1>
-
-  <nav class="nav-links">
-    <a href="index.html">Store</a>
-    <a href="posters.html">Posters</a>
-  </nav>
-</header>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Trendora | Store</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trendora</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+<body>
+
+<header class="site-header">
+  <img src="images/logo.png" class="logo">
+  <div>
+    <h1 class="brand-name">TRENDORA</h1>
+    <p class="tagline">Wear Motivation. Live Discipline.</p>
+  </div>
+
+  <nav class="nav-links">
+    <a href="index.html" class="active">Store</a>
+    <a href="posters.html">Posters</a>
+  </nav>
+</header>
+
+<section class="about">
+  <h2>About Trendora</h2>
+  <p>
+    Trendora is a motivation-driven brand selling premium posters and streetwear
+    designed to push discipline, focus, and consistency into daily life.
+  </p>
+</section>
+
 <section>
-  <h2>Motivation Posters</h2>
+  <h2>Clothing Collection</h2>
 
   <div class="products">
 
     <div class="card">
-      <span class="badge">HOT</span>
-      <img src="images/poster1.jpg">
-      <h3>Time Is Ticking</h3>
-      <p>Deadlines won’t wait. Start now.</p>
-      <p class="price">₹399</p>
-      <button onclick="order('Time Is Ticking Poster')">Order Now</button>
+      <img src="images/tshirt1.jpg">
+      <h3>Discipline T-Shirt</h3>
+      <p>Minimal black streetwear.</p>
+      <p class="price">₹699</p>
+      <button onclick="order('Discipline T-Shirt')">Order Now</button>
     </div>
 
     <div class="card">
-      <span class="badge">BEST</span>
-      <img src="images/poster2.jpg">
-      <h3>Discipline Beats Motivation</h3>
-      <p>Show up even when you don’t feel like it.</p>
-      <p class="price">₹399</p>
-      <button onclick="order('Discipline Beats Motivation Poster')">Order Now</button>
-    </div>
-
-    <div class="card">
-      <img src="images/poster3.jpg">
-      <h3>No Excuses</h3>
-      <p>Your future depends on today.</p>
-      <p class="price">₹399</p>
-      <button onclick="order('No Excuses Poster')">Order Now</button>
-    </div>
-
-    <div class="card">
-      <img src="images/poster4.jpg">
-      <h3>Focus</h3>
-      <p>Cut noise. Lock in.</p>
-      <p class="price">₹399</p>
-      <button onclick="order('Focus Poster')">Order Now</button>
-    </div>
-
-    <div class="card">
-      <img src="images/poster5.jpg">
-      <h3>Consistency</h3>
-      <p>Small steps daily.</p>
-      <p class="price">₹399</p>
-      <button onclick="order('Consistency Poster')">Order Now</button>
-    </div>
-
-    <div class="card">
-      <img src="images/poster6.jpg">
-      <h3>Wake Up</h3>
-      <p>Dreams need action.</p>
-      <p class="price">₹399</p>
-      <button onclick="order('Wake Up Poster')">Order Now</button>
-    </div>
-
-    <div class="card">
-      <img src="images/poster7.jpg">
-      <h3>Stay Hungry</h3>
-      <p>Never settle.</p>
-      <p class="price">₹399</p>
-      <button onclick="order('Stay Hungry Poster')">Order Now</button>
-    </div>
-
-    <div class="card">
-      <img src="images/poster8.jpg">
-      <h3>Prove Them Wrong</h3>
-      <p>Silence doubts.</p>
-      <p class="price">₹399</p>
-      <button onclick="order('Prove Them Wrong Poster')">Order Now</button>
-    </div>
-
-    <div class="card">
-      <img src="images/poster9.jpg">
-      <h3>Build Yourself</h3>
-      <p>No shortcuts.</p>
-      <p class="price">₹399</p>
-      <button onclick="order('Build Yourself Poster')">Order Now</button>
-    </div>
-
-    <div class="card">
-      <img src="images/poster10.jpg">
-      <h3>One Day or Day One</h3>
-      <p>You decide.</p>
-      <p class="price">₹399</p>
-      <button onclick="order('One Day or Day One Poster')">Order Now</button>
+      <img src="images/tshirt2.jpg">
+      <h3>No Excuses Hoodie</h3>
+      <p>Winter essential.</p>
+      <p class="price">₹1299</p>
+      <button onclick="order('No Excuses Hoodie')">Order Now</button>
     </div>
 
   </div>
 </section>
+
+<footer>
+  <p>Payments via UPI | Orders on WhatsApp</p>
+  <p>© 2026 Trendora. Built by Pavan.</p>
+</footer>
+
+<script>
+function order(product) {
+  const phone = "9110498678";
+  const msg = `Hi Trendora, I want to order: ${product}`;
+  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`);
+}
+</script>
+
+</body>
+</html>
