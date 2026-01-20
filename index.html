@@ -1,22 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Trendora – Posters</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<header>
-  <img src="images/logo.png">
-  <h1>TRENDORA</h1>
-  <nav>
-    <a href="index.html">Store</a>
-    <a href="posters.html">Posters</a>
-  </nav>
-</header>
-
 <section>
   <h2>Motivation Posters</h2>
+
   <div class="products">
 
     <div class="card">
@@ -28,102 +12,78 @@
       <button onclick="order('Time Is Ticking Poster')">Order Now</button>
     </div>
 
-    <!-- poster2 to poster10 same format -->
-
-  </div>
-</section>
-
-<section>
-  <h2>About Trendora</h2>
-  <p style="text-align:center;">
-    Trendora is a modern lifestyle brand delivering premium baggy fashion
-    and motivational posters designed to build discipline, confidence,
-    and focus every single day.
-  </p>
-</section>
-
-<footer>
-  Pay via UPI • Send screenshot on WhatsApp  
-  <br>© Pavan & Team Trendora
-</footer>
-
-<script>
-function order(product) {
-  let msg =
-  `Hi Trendora, I want to order: ${product}.
-Payment via UPI`;
-  window.location.href =
-  "https://wa.me/919110498678?text=" + encodeURIComponent(msg);
-}
-</script>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Trendora – Store</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<header>
-  <img src="images/logo.png">
-  <h1>TRENDORA</h1>
-  <nav>
-    <a href="index.html">Store</a>
-    <a href="posters.html">Posters</a>
-  </nav>
-</header>
-
-<section>
-  <h2>Baggy Shirts</h2>
-  <div class="products">
-
-    <!-- SHIRT 1 -->
     <div class="card">
-      <span class="badge">20% OFF</span>
-      <img src="images/shirt1.jpg">
-      <h3>Urban Black Shirt</h3>
-      <p>Premium cotton, oversized fit.</p>
-      <p class="price">₹799</p>
-      <button onclick="order('Urban Black Shirt')">Order Now</button>
+      <span class="badge">BEST</span>
+      <img src="images/poster2.jpg">
+      <h3>Discipline Beats Motivation</h3>
+      <p>Show up even when you don’t feel like it.</p>
+      <p class="price">₹399</p>
+      <button onclick="order('Discipline Beats Motivation Poster')">Order Now</button>
     </div>
 
-    <!-- Repeat for shirt2–shirt5 -->
-    <!-- Just change image & name -->
-  </div>
-</section>
-
-<section>
-  <h2>Baggy Pants</h2>
-  <div class="products">
-
     <div class="card">
-      <span class="badge">BEST SELLER</span>
-      <img src="images/pants1.jpg">
-      <h3>Street Fit Pants</h3>
-      <p>Relaxed fit, all-day comfort.</p>
-      <p class="price">₹999</p>
-      <button onclick="order('Street Fit Pants')">Order Now</button>
+      <img src="images/poster3.jpg">
+      <h3>No Excuses</h3>
+      <p>Your future depends on today.</p>
+      <p class="price">₹399</p>
+      <button onclick="order('No Excuses Poster')">Order Now</button>
     </div>
 
-    <!-- pants2, pants3 -->
+    <div class="card">
+      <img src="images/poster4.jpg">
+      <h3>Focus</h3>
+      <p>Cut noise. Lock in.</p>
+      <p class="price">₹399</p>
+      <button onclick="order('Focus Poster')">Order Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/poster5.jpg">
+      <h3>Consistency</h3>
+      <p>Small steps daily.</p>
+      <p class="price">₹399</p>
+      <button onclick="order('Consistency Poster')">Order Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/poster6.jpg">
+      <h3>Wake Up</h3>
+      <p>Dreams need action.</p>
+      <p class="price">₹399</p>
+      <button onclick="order('Wake Up Poster')">Order Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/poster7.jpg">
+      <h3>Stay Hungry</h3>
+      <p>Never settle.</p>
+      <p class="price">₹399</p>
+      <button onclick="order('Stay Hungry Poster')">Order Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/poster8.jpg">
+      <h3>Prove Them Wrong</h3>
+      <p>Silence doubts.</p>
+      <p class="price">₹399</p>
+      <button onclick="order('Prove Them Wrong Poster')">Order Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/poster9.jpg">
+      <h3>Build Yourself</h3>
+      <p>No shortcuts.</p>
+      <p class="price">₹399</p>
+      <button onclick="order('Build Yourself Poster')">Order Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/poster10.jpg">
+      <h3>One Day or Day One</h3>
+      <p>You decide.</p>
+      <p class="price">₹399</p>
+      <button onclick="order('One Day or Day One Poster')">Order Now</button>
+    </div>
+
   </div>
 </section>
-
-<footer>
-  © 2026 Trendora
-</footer>
-
-<script>
-function order(product) {
-  let msg = `Hi Trendora, I want to order: ${product}`;
-  window.location.href =
-  "https://wa.me/919110498678?text=" + encodeURIComponent(msg);
-}
-</script>
-
-</body>
-</html>
