@@ -145,12 +145,26 @@
 </footer>
 
 <script>
-function order(product) {
+function order(product, price) {
   const phone = "9110498678";
-  const msg = `Hi Trendora, I want to order: ${product}`;
-  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`);
+  const upi = "yourupiid@bank"; // 👈 replace with your real UPI ID
+
+  const message = 
+`Hi Trendora 👋
+I want to order:
+
+🛍 Product: ${product}
+💰 Price: ₹${price}
+
+📌 Payment Method:
+UPI ID: ${upi}
+
+Please send me the payment QR.
+After payment, I will share the screenshot & delivery address.`;
+
+  window.open(
+    "https://wa.me/" + phone + "?text=" + encodeURIComponent(message),
+    "_blank"
+  );
 }
 </script>
-
-</body>
-</html>
